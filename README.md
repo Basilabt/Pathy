@@ -16,7 +16,10 @@
 
 ---
 
-![Image](https://github.com/user-attachments/assets/3b8c45d8-d2cd-4182-8ec8-97bbb00e27c6)
+<p align="center">
+  <img src="https://github.com/Basilabt/Pathy/issues/1" width="45%" />
+  <img src="https://github.com/Basilabt/Pathy/issues/1" width="45%" />
+</p>
 
 ## 📖 About Pathy Project
 
