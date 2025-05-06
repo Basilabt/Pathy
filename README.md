@@ -57,7 +57,7 @@ This project includes:
 
 ### SignUp Screen
 
- <img src="https://github.com/user-attachments/assets/dfd4642e-15d0-494c-ab32-3b2df805e2f3" width="50%" height="70%"/>
+ <img src="https://github.com/user-attachments/assets/7fcec570-d2f4-424c-a263-f4e5cf8e7acb" width="50%" height="70%"/>
 
 ### TimeLine Posts
 
