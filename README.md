@@ -16,10 +16,10 @@
 
 ---
 
-<p align="center">
+
   <img src="https://private-user-images.githubusercontent.com/77483631/441003191-3b8c45d8-d2cd-4182-8ec8-97bbb00e27c6.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDY1NzM4NjYsIm5iZiI6MTc0NjU3MzU2NiwicGF0aCI6Ii83NzQ4MzYzMS80NDEwMDMxOTEtM2I4YzQ1ZDgtZDJjZC00MTgyLThlYzgtOTdiYmIwMGUyN2M2LnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA1MDYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNTA2VDIzMTkyNlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTQyMmYxYzFjYzdmMmZkYTAwY2NmZDc4NzFlMzFkOWQwODQzMzMzZjRhYjc0ZGMxZmJlYWVlNGRkZjU5NmI0NWQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.Ob-1S91rce-j2K9y-6qG2VMaqYwBffz_WRdBz0ww6Ug" width="300" height = 600" />
-  <img src="https://github.com/user-attachments/assets/62f09f17-3385-426f-ae6c-1cd07096e4a8" width="500" height = "600" />
-</p>
+  <img src="https://github.com/user-attachments/assets/62f09f17-3385-426f-ae6c-1cd07096e4a8" width="700" height = "600" />
+
 
 ## 📖 About Pathy Project
 
