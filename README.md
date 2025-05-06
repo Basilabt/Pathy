@@ -68,4 +68,4 @@ This project includes:
 
 
 ## Web Application
-> **Note:** For access to the full backend script and database (for both web and mobile versions), please contact me at **[baabutaleb@gmai.com](mailto:baabutaleb@gmai.com)**.
+> **Note:** For access to the full backend and database (for both web and mobile versions), please contact me at **[baabutaleb@gmai.com](mailto:baabutaleb@gmai.com)**.
