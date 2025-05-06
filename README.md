@@ -16,10 +16,7 @@
 
 ---
 
-<p align="center">
-  <img src="https://github.com/Basilabt/Pathy/issues/1#issue-3044247444" alt="" width="45%" />
-  <img src="https://github.com/user-attachments/assets/photo2.png" alt="Screenshot 2" width="45%" />
-</p>
+![Image](https://github.com/user-attachments/assets/3b8c45d8-d2cd-4182-8ec8-97bbb00e27c6)
 
 ## 📖 About Pathy Project
 
