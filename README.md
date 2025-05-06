@@ -48,7 +48,7 @@ This project includes:
 ![Image](https://github.com/user-attachments/assets/e69b5800-8278-4e49-972d-ce30db018bfb)
 
 
-## Mobile Application
+## 📱 Mobile Application
 > **Note:** For access to the full iOS mobile application source code, please contact me at **[baabutaleb@gmai.com](mailto:baabutaleb@gmai.com)**.
 
 ### Login Screen
@@ -81,7 +81,7 @@ This project includes:
 
 
 
-## Web Application
+## 🌍 Web Application
 > **Note:** For access to the full backend and database (for both web and mobile versions), please contact me at **[baabutaleb@gmai.com](mailto:baabutaleb@gmai.com)**.
 
 ### Login Screen
