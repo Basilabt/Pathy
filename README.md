@@ -16,6 +16,11 @@
 
 ---
 
+<p align="center">
+  <img src="![Image](https://github.com/user-attachments/assets/3b8c45d8-d2cd-4182-8ec8-97bbb00e27c6)" alt="Screenshot 1" width="45%" />
+  <img src="https://github.com/user-attachments/assets/photo2.png" alt="Screenshot 2" width="45%" />
+</p>
+
 ## 📖 About Pathy Project
 
 Welcome to the **Pathy** project repository! Pathy is a dynamic social media platform designed to connect people through interactive posts, stories, and messaging across web and iOS devices. This full-stack project showcases clean architecture and seamless integration using modern tools and frameworks.
