@@ -18,7 +18,7 @@
 
 
 
-  <img src="https://github.com/user-attachments/assets/62f09f17-3385-426f-ae6c-1cd07096e4a8" width="80%"/>
+
 
 
 ## 📖 About Pathy Project
@@ -51,8 +51,7 @@ This project includes:
 ## Mobile Application
 > **Note:** For access to the full iOS mobile application source code, please contact me at **[baabutaleb@gmai.com](mailto:baabutaleb@gmai.com)**.
 
-
-<p align="center">
+">
 
 
 
@@ -60,3 +59,25 @@ This project includes:
 
 ## Web Application
 > **Note:** For access to the full backend and database (for both web and mobile versions), please contact me at **[baabutaleb@gmai.com](mailto:baabutaleb@gmai.com)**.
+
+### Login Screen
+  <img src="https://github.com/user-attachments/assets/62f09f17-3385-426f-ae6c-1cd07096e4a8" width="80%"/>
+
+### SignUp Screen 
+ <img src="https://github.com/user-attachments/assets/dfd4642e-15d0-494c-ab32-3b2df805e2f3" width="80%"/>
+
+ ### TimeLine Posts
+ <img src="https://github.com/user-attachments/assets/4cc1ccd2-37a9-4143-8509-e77ed9bdf565" width="80%"/>
+
+ ### Chat 
+ <img src="https://github.com/user-attachments/assets/665795fe-5317-4a93-bbd5-019b6d94efeb" width="80%"/>
+
+
+ ### Explore
+ <img src="https://github.com/user-attachments/assets/7f6c8a34-cd44-4868-bb35-804d41291d7d" width="80%"/>
+
+ 
+ ### Profile 
+ <img src="https://github.com/user-attachments/assets/55a51fc8-901c-4146-95bf-412834725baf" width="80%"/>
+
+
