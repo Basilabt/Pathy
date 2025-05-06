@@ -1,0 +1,107 @@
+﻿@{
+    ViewData["Title"] = "Sign up";
+}
+
+
+@model clsRegisterViewModel;
+
+<head>
+    <link rel="stylesheet" href="~/css/Register.css" />
+</head>
+
+
+<body>
+
+    <div class="register-container">
+
+        <div class="register-card">
+
+            <h3 class="register-header">Pathy Sign Up</h3>
+
+            <form method="post" action="/Authentication/Register">
+
+                <div class="form-group mb-3">
+                    <label for="username">Username</label>
+                    <input asp-for="username" type="text" id="username" name="username" class="form-control" placeholder="Enter Username" />
+                    <span asp-validation-for="username" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-4">
+                    <label for="password">Password</label>
+                    <input asp-for="password" type="password" id="password" name="password" class="form-control" placeholder="Enter password" />
+                    <span asp-validation-for="password" class="text-danger"></span>
+                </div>
+
+
+                <div class="form-group mb-4">
+                    <label for="firstName">First Name</label>
+                    <input asp-for="firstName" type="text" id="firstName" name="firstName" class="form-control" placeholder="Enter First Name" />
+                    <span asp-validation-for="firstName" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-4">
+                    <label for="secondName">Second Name</label>
+                    <input asp-for="secondName" type="text" id="secondName" name="secondName" class="form-control" placeholder="Enter Second Name" />
+                    <span asp-validation-for="secondName" class="text-danger"></span>
+                </div>
+
+                <div class="form-group mb-4">
+                    <label for="thirdName">Third Name</label>
+                    <input asp-for="thirdName" type="text" id="thirdName" name="thirdName" class="form-control" placeholder="Enter Third Name" />
+                    <span asp-validation-for="thirdName" class="text-danger"></span>
+                </div>
+
+
+                <div class="form-group mb-4">
+                    <label for="lastName">Last Name</label>
+                    <input asp-for="lastName" type="text" id="lastName" name="lastName" class="form-control" placeholder="Enter Last Name" />
+                    <span asp-validation-for="lastName" class="text-danger"></span>
+                </div>
+
+
+                <div class="form-group mb-4">
+                    <label for="email">Email</label>
+                    <input asp-for="email" type="text" id="email" name="email" class="form-control" placeholder="Enter Email" />
+                    <span asp-validation-for="email" class="text-danger"></span>
+                </div>
+
+
+                <div class="form-group mb-4">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input asp-for="phoneNumber" type="text" id="phoneNumber" name="phoneNumber" class="form-control" placeholder="Enter Phone Number" />
+                    <span asp-validation-for="phoneNumber" class="text-danger"></span>
+                </div>
+
+
+                <div class="form-group mb-3">
+                    <label>Gender</label>
+                    <div>
+                        <!-- Male Radio Button -->
+                        <input asp-for="gender" type="radio" id="male" name="gender" value="1" />
+                        <label for="male">Male</label>
+
+                        <!-- Female Radio Button -->
+                        <input asp-for="gender" type="radio" id="female" name="gender" value="2" />
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+
+
+                <button type="submit" class="submit-btn">sign up</button>
+
+            </form>
+
+            <p class="login-text">
+                Already have an account? <a class="login-text" href="/Authentication/Login">sign in</a>
+            </p>
+
+        </div>
+    </div>
+
+    @if (TempData["Message"] != null)
+    {
+        <script>
+            alert("@TempData["Message"]");
+        </script>
+    }
+</body>

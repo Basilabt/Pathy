@@ -1,0 +1,119 @@
+﻿.comment-box {
+    margin-top: 15px;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.comment-textarea {
+    width: 100%;
+    height: 60px;
+    padding: 8px;
+    resize: vertical;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 8px;
+}
+
+.submit-comment-btn {
+    background-color: #ff0000;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.comments-list {
+    margin-top: 20px;
+}
+
+.comment-card {
+    border: 1px solid #e0e0e0;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+    .comment-card .user-info {
+        display: flex;
+        align-items: center;
+        margin-bottom: 5px;
+    }
+
+        .comment-card .user-info img {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+    .comment-card .user-details {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .comment-card .fullname {
+        font-weight: bold;
+    }
+
+    .comment-card .username {
+        font-size: 0.9em;
+        color: #777;
+    }
+
+    .comment-card .comment-date {
+        font-size: 0.8em;
+        color: #aaa;
+    }
+
+.comment-content {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.comment-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.button-group {
+    display: flex;
+    gap: 10px;
+}
+
+
+.comment-card .comment-btn {
+    border: none;
+    padding: 0;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+
+.update-btn {
+    width: 80px;
+    height: 30px;
+    background-color: limegreen;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.delete-btn {
+    width: 80px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+

@@ -1,0 +1,73 @@
+﻿@{
+    ViewData["Title"] = "Chat";
+}
+
+@model clsChatViewModel;
+
+@functions {
+    string getUserProfilePictureURL(string img)
+    {
+        string path = string.IsNullOrEmpty(img) ? "/Images/User.png" : "/Images/People/" + img + ".png";
+        return path;
+    }
+}
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat Page</title>
+    <link rel="stylesheet" href="~/css/Chat.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+    <div class="chat-container">
+
+        <header class="chat-header">
+            <img class="profile-pic" src="@getUserProfilePictureURL(Model.userToChatWith.photoURL)" alt="Profile Picture" />
+            <div class="user-info">
+                <h2>@Model.userToChatWith.person.fullname</h2>
+                <p class="username">@Model.userToChatWith.username</p>
+            </div>
+        </header>
+
+        <div class="chat-box">
+            @foreach (var message in Model.allmessages)
+            {
+                var isOutgoing = message.senderAccountID == clsGlobal.account.accountID;
+                var cssClass = isOutgoing ? "outgoing" : "incoming";
+                <div class="message-wrapper @cssClass">
+                    <div class="message-content">
+                        <div class="message">@message.message</div>
+                        @if (isOutgoing)
+                        {
+                            <div class="message-actions">
+                                <form asp-controller="Messages" asp-action="DeleteMessage" method="post" class="inline-form">
+                                    <input type="hidden" name="messageID" value="@message.messageID" />
+                                    <input type="hidden" name="userToChatWithID" value="@Model.userToChatWithID" />
+                                    <button type="submit" class="icon-button" title="Delete">
+                                        <i class="fas fa-trash-alt"></i>
+                                    </button>
+                                </form>
+                                <form asp-controller="Messages" asp-action="OpenEditMessage" method="post" class="inline-form">
+                                    <input type="hidden" name="messageID" value="@message.messageID" />
+                                    <input type="hidden" name="message" value="@message.message" />
+                                    <input type="hidden" name="userToChatWithID" value="@Model.userToChatWithID" />
+                                    <button type="submit" class="icon-button" title="Edit">
+                                        <i class="fas fa-pen"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        }
+                    </div>
+                </div>
+            }
+        </div>
+
+        <form class="chat-input" asp-controller="Messages" asp-action="SendMessageTo" method="post">
+            <input type="hidden" name="userToChatWithID" value="@Model.userToChatWithID" />
+            <input type="text" placeholder="Type your message..." name="message" value="@Model.message" />
+            <button type="submit">Send</button>
+        </form>
+
+    </div>
+</body>

@@ -1,0 +1,84 @@
+﻿body {
+    background: url("/Images/MainBackground.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+h3, label {
+    color: black; /* Black text for labels and other text */
+}
+
+h3 {
+    font-family: Pristina;
+    font-size: xx-large;
+    color: orangered; /* Orange-red text for the title */
+}
+
+.update-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.update-card {
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    background: white; /* White background for the card */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.update-header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: orangered; /* Orange-red text for the header */
+}
+
+/* Form styling */
+.update-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Space between form fields */
+}
+
+    .update-form label {
+        font-weight: bold;
+        color: black; /* Black text for labels */
+    }
+
+    .update-form input {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1rem;
+        background-color: #f9f9f9; /* Light gray background for inputs */
+        color: black; /* Black text for inputs */
+    }
+
+        .update-form input:focus {
+            outline: none;
+            border-color: orangered; /* Highlight input border on focus */
+        }
+
+/* Submit button styling */
+.submit-btn {
+    background-color: #f83600; /* Orange-red background */
+    color: white; /* White text */
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    width: 100%; /* Full width button */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    margin-top: 10px; /* Add space above the button */
+}
+

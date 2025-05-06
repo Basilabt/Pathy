@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Pathy_API.props" />
+</Project>

@@ -1,0 +1,91 @@
+﻿body {
+    background: url("/Images/MainBackground.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+h3, label {
+    color: black;
+}
+
+h3 {
+    font-family: Pristina;
+    font-size: xx-large;
+    color: orangered;
+}
+
+.register-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.register-card {
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.register-header {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: orangered;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+    .register-form label {
+        font-weight: bold;
+        color: black;
+    }
+
+    .register-form input {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1rem;
+        background-color: #f9f9f9;
+        color: black;
+    }
+
+        .register-form input:focus {
+            outline: none;
+            border-color: orangered;
+        }
+
+.submit-btn {
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 10px;
+}
+
+    .submit-btn:hover {
+        background-color: darkorange;
+    }
+
+.login-text {
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+}

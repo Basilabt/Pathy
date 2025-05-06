@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/Site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Pathy.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Sidebar -->
+            <nav class="custom-sidebar d-none d-md-block bg-light sidebar">
+                <div class="sidebar-sticky">
+                    <ul class="nav flex-column">
+
+                      
+
+                        @if(!clsGlobal.isLoggedIn()) {
+
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Authentication" asp-action="Login">
+                                    <img src="~/Images/SignIn.png" alt="Sign In" class="sidebar-icon" /> sign in
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Authentication" asp-action="Register">
+                                    <img src="~/Images/SignUp.png" alt="Register" class="sidebar-icon" /> sign up
+                                </a>
+                            </li>
+                        }
+
+
+                        @if(clsGlobal.isLoggedIn()) {
+
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Messages" asp-action="MessagesInbox">
+                                    <img src="~/Images/Message.png" alt="Chat" class="sidebar-icon" /> Chats
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Profile" asp-action="LoggedUserProfile">
+                                    <img src="~/Images/Profile.png" alt="Profile" class="sidebar-icon" /> profile
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Explore" asp-action="SuggestedFriends">
+                                    <img src="~/Images/Internet.png" alt="New Post" class="sidebar-icon" /> Explore
+                                </a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="TimeLine" asp-action="TimeLine">
+                                    <img src="~/Images/timeline.png" alt="timeline" class="sidebar-icon" /> Timeline
+                                </a>
+                            </li>
+                        }
+
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Main Content -->
+            <main role="main" class="col-md-10 ml-sm-auto col-lg-10 px-4">
+                @RenderBody()
+            </main>
+        </div>
+    </div>
+
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

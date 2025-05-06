@@ -1,0 +1,107 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    padding-top: 50px;
+}
+
+.post-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    margin-top:  50px;
+}
+
+.post-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+    .user-info img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+}
+
+    .user-details .fullname {
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .user-details .username {
+        font-size: 14px;
+        color: gray;
+    }
+
+.post-content {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+
+.post-date {
+    font-size: 9px;
+    color: gray;
+}
+
+.post-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.update-btn {
+    background-color: limegreen;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+ .update-btn:hover {
+        background-color: #388E3C;
+ }
+
+.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.delete-btn:hover {
+        background-color: #C70039;
+}

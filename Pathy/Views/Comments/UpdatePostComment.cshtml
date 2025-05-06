@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "Update Comment";
+}
+
+@model clsUpdateCommentViewModel;
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Text Box</title>
+    <link rel="stylesheet" href="~/css/UpdatePostComment.css">
+</head>
+
+
+<body>
+    <!-- Comment Box -->
+    <div class="comment-box">
+
+        <form asp-controller="Comments" asp-action="UpdateComment" method="post">
+            <textarea name="commentText" placeholder="Write a comment..."  class="comment-textarea" required>@Model.commentText</textarea>
+            <input type="hidden" name="commentID" value="@Model.commentID"/>
+            <button type="submit" class="submit-comment-btn">Update Comment</button>
+        </form>
+
+    </div>
+
+</body>

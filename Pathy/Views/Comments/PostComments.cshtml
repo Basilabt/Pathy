@@ -1,0 +1,80 @@
+﻿@{
+    ViewData["Title"] = "Comments";
+}
+
+@model clsPostCommentsViewModel;
+
+@{
+    string getUserProfilePhotoURL(string img)
+    {
+        string path = string.IsNullOrEmpty(img) ? "/Images/User.png" : "/Images/People/" + img + ".png";
+        return path;
+    }
+
+}
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Text Box</title>
+    <link rel="stylesheet" href="~/css/PostComments.css">
+</head>
+
+
+<body>
+    <!-- Comment Box -->
+    <div class="comment-box">
+        <form asp-controller="Comments" asp-action="AddNewComment" method="post">
+            <input type="hidden" name="postID" value="@Model.postID" />        
+            <textarea name="commentText" placeholder="Write a comment..." class="comment-textarea" required></textarea>
+            <button type="submit" class="submit-comment-btn">Comment</button>
+        </form>
+    </div>
+
+    <!-- User Comments List -->
+    <div class="comments-list">
+        
+        @if(Model.postComments.Count != 0) {
+
+            @foreach (var comment in Model.postComments)
+            {
+                <div class="comment-card">
+                    <div class="user-info">
+                        <img src="@getUserProfilePhotoURL(comment.commenterUser.photoURL)" alt="User Profile">
+                        <div class="user-details">
+                            <span class="fullname">@comment.commenterUser.person.fullname</span>
+                            <span class="username">@@@comment.commenterUser.username</span>
+                        </div>
+                    </div>
+
+                    <p class="comment-content">@comment.commentText</p>
+
+                    <div class="comment-actions">
+                        <div class="button-group">
+                            <form asp-controller="Comments" asp-action="OpenUpdateCommentView" method="post">
+                                <input type="hidden" name="commentID" value="@comment.commentID" />
+                                <input type="hidden" name="commentText" value="@comment.commentText" />
+                                <input type="hidden" name="postID" value="@comment.postID" />
+                                <button class="comment-btn update-btn">Update</button>
+                            </form>
+
+                            <form asp-controller="Comments" asp-action="DeleteComment" method="post">
+                                <input type="hidden" name="commentID" value="@comment.commentID" />
+                                <input type="hidden" name="postID" value="@comment.postID" />
+                                <button type="submit" class="comment-btn delete-btn">Delete</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            }
+
+
+        } else {
+            <div class="comment-card"> </div>
+        }
+
+     </div>
+
+</body>

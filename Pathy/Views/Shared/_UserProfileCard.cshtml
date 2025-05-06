@@ -1,0 +1,61 @@
+﻿@model clsUserProfileViewModel;
+
+@{
+    string getUserProfilePhotoURL(string img)
+    {
+        string path = string.IsNullOrEmpty(img) ? "/Images/User.png" : "/Images/People/" + img + ".png";
+        return path;
+    }
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="~/css/UserProfileCard.css" />
+</head>
+<body>
+    <div class="profile-card-container">
+        <div class="profile-card">
+            <div class="profile-photo">
+                <img src="@getUserProfilePhotoURL(Model.photoURL)" alt="Profile Photo" />
+            </div>
+            <div class="profile-info">
+                <h2 class="username">
+                    @Model.username
+                    @if (Model.accountType == (int)clsAccountType.enType.Developer)
+                    {
+                        <img src="/Images/DeveloperBadge.png" />
+                    }
+                </h2>
+                <p class="full-name">@Model.fullname</p>
+
+                <div class="stats">
+                    <div class="stat">
+                        <form method="get" action="/Profile/GetUserFollowers">
+                            <input type="hidden" name="userId" value="@Model.userID" />
+                            <button type="submit" class="stat-button">
+                                <span class="stat-number">@Model.numberOfFollowers</span>
+                                <span class="stat-label">Followers</span>
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="stat">
+                        <form method="get" action="/Profile/GetUserFollwings">
+                            <input type="hidden" name="userId" value="@Model.userID" />
+                            <button type="submit" class="stat-button">
+                                <span class="stat-number">@Model.numberOfFollowings</span>
+                                <span class="stat-label">Following</span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <form method="get" action="/Profile/EditUserProfileInfo" class="edit-form">
+                <button type="submit" class="submit-btn">Edit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

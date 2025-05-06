@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Edit post";
+}
+
+@model clsEditUserPostViewModel;
+
+
+<head>
+
+    <link rel="stylesheet" href="~/css/EditUserPost.css" />
+
+</head>
+
+
+
+<body>
+
+    <form method="post" action="/Profile/EditUserPost">
+
+        <input type="hidden" asp-for="postID"/>
+        <input type="hidden" asp-for="imageURL"/>
+        <input type="hidden" asp-for="videoURL" />
+
+        <div class="post-container">
+
+            <textarea asp-for="textContent" class="text-box" placeholder="">@Model.textContent</textarea>
+            <span asp-validation-for="textContent" class="text-danger"></span>
+
+            <div class="action-buttons">
+                <button class="add-media-btn">+</button>
+                <button class="post-btn" type="submit">edit</button>
+            </div>
+
+        </div>
+
+    </form>
+
+</body>

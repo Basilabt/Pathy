@@ -1,0 +1,118 @@
+﻿@{
+    ViewData["Title"] = "Timeline";
+}
+
+@model clsTimeLineViewModel;
+
+@{
+    string getUserProfilePhotoURL(string img)
+    {
+        string path = string.IsNullOrEmpty(img) ? "/Images/User.png" : "/Images/People/" + img + ".png";
+        return path;
+    }
+ 
+}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Text Box</title>
+    <link rel="stylesheet" href="~/css/TimeLine.css">
+</head>
+
+<body>
+    <form method="post" action="/TimeLine/AddNewPost">
+        <div class="post-container">
+            <textarea asp-for="postTextContent" class="text-box" placeholder="What's on your mind @clsGlobal.logedInUser.username ?"></textarea>
+            <span asp-validation-for="postTextContent" class="text-danger"></span>
+            <div class="action-buttons">
+                <button class="add-media-btn">+</button>
+                <button class="post-btn" type="submit">Post</button>
+            </div>
+        </div>
+    </form>
+
+    <div class="post-container">
+        @if (Model.allPostsList.Count > 0)
+        {
+            @foreach (var post in Model.allPostsList)
+            {
+                <div class="post-card">
+                    <div class="user-info">
+                        <img src="@getUserProfilePhotoURL(post.account.user.photoURL)" alt="User Profile">
+                        <div class="user-details">
+                            <span class="fullname">@post.account.user.person.fullname</span>
+                            <span class="username">@@ @post.account.user.username</span>
+                            <p class="post-date">@post.creationDateTime.ToString("yyyy-MM-dd HH:mm")</p>
+                        </div>
+                    </div>
+                    <p class="post-content">@post.textContent</p>
+
+                    <div class="post-actions">
+                        
+                        <div class="interaction-info">
+                            <div class="like-info">
+
+                                <form method="post" asp-controller="Likes" asp-action="UsersWhoLikesPost">
+                                    <input type="hidden" name="postID" value="@post.postID" />
+                                    <button type="submit" class="like-info">
+                                        <img src="/Images/Like.png" alt="Like" class="interaction-icon">
+                                        <span class="like-count">@post.numberOfLikes</span>
+                                    </button>
+                                </form>
+
+                            </div>
+                            <div class="comment-info">
+                                <img src="/Images/Comment.png" alt="Comment" class="interaction-icon">
+                                <span class="comment-count">@post.numberOfComments</span> 
+                            </div>
+                        </div>
+
+                        
+                        <div class="buttons">
+
+                            @if(clsPost.isPostLikedByUser(post.postID,clsGlobal.logedInUser.userID)) 
+                            {
+                                <form asp-controller="TimeLine" asp-action="UnlikePost" method="post">
+                                    <input type="hidden" name="postID" value="@post.postID" />
+                                    <button type="submit" class="Unlike-btn">Unlike</button>
+                                </form>
+
+                            } else 
+                            {                         
+                                <form asp-controller="TimeLine" asp-action="LikePost" method="post">
+                                    <input type="hidden" name="postID" value="@post.postID" />
+                                    <button type="submit" class="like-btn">Like</button>
+                                </form>
+                            }
+
+
+
+                            <form asp-controller="TimeLine" asp-action="OpenPostCommentsPage" method="post">
+                                <input type="hidden" name="postID" value="@post.postID" />
+                                <button class="comment-btn">Comment</button>
+                            </form>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            }
+        }
+    </div>
+
+    @if (TempData["NewPostMessage"] != null)
+    {
+        <script>
+            alert("@TempData["NewPostMessage"]");
+        </script>
+    }
+
+    @if (TempData["UpdateInformationMessage"] != null)
+    {
+        <script>
+            alert("@TempData["UpdateInformationMessage"]");
+        </script>
+    }
+</body>

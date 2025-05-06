@@ -1,0 +1,45 @@
+﻿@{
+    ViewData["Title"] = "Followings";
+}
+
+@model clsUserFollowingViewModel;
+
+@{
+    string getUserProfilePhotoURL(string img)
+    {
+        string path = string.IsNullOrEmpty(img) ? "/Images/User.png" : "/Images/People/" + img + ".png";
+        return path;
+    }
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/UserFollowings.css" />
+</head>
+
+<body>
+    @foreach (var user in Model.followings)
+    {
+        <div class="user-card">
+            <img class="profile-pic" src="@getUserProfilePhotoURL(user.photoURL)" alt="Profile Picture">
+            <div class="user-info">
+                <h2>
+                    @user.person.fullname
+                    @if (user.accountType == clsAccountType.enType.Developer)
+                    {
+                        <img src="/Images/DeveloperBadge.png" />
+                    }
+                </h2>
+                <p class="username">@@@user.username</p>
+                <p>Followers: @user.numberOfFollowers | Following: @user.numberOfFollowings</p>
+            </div>
+
+            <form method="post" action="/Profile/UnfollowUser">
+                <input type="hidden" name="followerUserID" value="@clsGlobal.logedInUser.userID" />
+                <input type="hidden" name="followedUserID" value="@user.userID" />
+                <button class="unfollow-btn" type="submit">Unfollow</button>
+            </form>
+        </div>
+    }
+
+
+</body>

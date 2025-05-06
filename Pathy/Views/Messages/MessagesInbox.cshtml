@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Messages";
+}
+
+@functions {
+    string getUserProfilePictureURL(string img)
+    {
+        string path = string.IsNullOrEmpty(img) ? "/Images/User.png" : "/Images/People/" + img + ".png";
+        return path;
+    }
+}
+
+@model clsMessagesViewModel;
+
+<head>
+    <meta charset="utf-8" />    
+    <link rel="stylesheet" href="~/css/MessagesInbox.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Messages Inbox</h1>
+
+
+        @foreach (var user in Model.usersToChatWith)
+        {
+            <form asp-controller="Messages" asp-action="OpenChatWithUser" method="post">
+                <input type="hidden" name="userToChatWithID" value="@user.userID" />
+
+                <button type="submit" class="message-card-btn">
+                    <div class="message-card">
+                        <img class="profile-pic" src="@getUserProfilePictureURL(user.photoURL)" alt="Profile Picture" />
+                        <div class="message-info">
+                            <h2>
+                                @user.person.fullname
+                                @if (user.accountType == clsAccountType.enType.Developer)
+                                {
+                                    <img class="badge" src="/Images/DeveloperBadge.png" alt="Developer Badge" />
+                                }
+                            </h2>
+                            <p class="username">@@@user.username</p>
+                        </div>
+                    </div>
+                </button>
+            </form>
+
+        }
+    </div>
+</body>
+

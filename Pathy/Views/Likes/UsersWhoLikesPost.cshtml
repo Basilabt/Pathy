@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "Likes";
+}
+
+
+@model clsUsersWhoLikesPostViewModel;
+
+
+@{
+    string getUserProfilePictureURL(string img)
+    {
+        string path = string.IsNullOrEmpty(img) ? "/Images/User.png" : "/Images/People/" + img + ".png";
+        return path;
+    }
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/SuggestedFriends.css" />
+</head>
+
+<body>
+
+    @foreach (var user in Model.usersWhoLikePost)
+    {
+        <div class="user-card">
+            <img class="profile-pic" src="@getUserProfilePictureURL(user.photoURL)" alt="Profile Picture">
+            <div class="user-info">
+                <h2>
+                    @user.person.fullname
+                    @if (user.accountType == clsAccountType.enType.Developer)
+                    {
+                        <img src="/Images/DeveloperBadge.png" />
+                    }
+                </h2>
+                <p class="username">@@@user.username</p>
+                <p>Followers: @user.numberOfFollowers | Following: @user.numberOfFollowings</p>
+            </div>
+
+            <form method="post" action="/Explore/FollowUser">
+                <input type="hidden" name="userID" value="@user.userID" />
+                <button class="follow-btn" type="submit">Follow</button>
+            </form>
+
+        </div>
+    }
+
+
+</body>

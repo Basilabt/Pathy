@@ -1,0 +1,15 @@
+C:\Users\User\Desktop\DEMO_API\Pathy_BusinessAccessLayer\bin\Debug\net8.0\Pathy_BusinessAccessLayer.deps.json
+C:\Users\User\Desktop\DEMO_API\Pathy_BusinessAccessLayer\bin\Debug\net8.0\Pathy_BusinessAccessLayer.dll
+C:\Users\User\Desktop\DEMO_API\Pathy_BusinessAccessLayer\bin\Debug\net8.0\Pathy_BusinessAccessLayer.pdb
+C:\Users\User\Desktop\DEMO_API\Pathy_BusinessAccessLayer\bin\Debug\net8.0\Pathy_DataAccessLayer.dll
+C:\Users\User\Desktop\DEMO_API\Pathy_BusinessAccessLayer\bin\Debug\net8.0\Pathy_DataAccessLayer.pdb
+C:\Users\User\Desktop\DEMO_API\Pathy_BusinessAccessLayer\obj\Debug\net8.0\Pathy_BusinessAccessLayer.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\DEMO_API\Pathy_BusinessAccessLayer\obj\Debug\net8.0\Pathy_BusinessAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\Desktop\DEMO_API\Pathy_BusinessAccessLayer\obj\Debug\net8.0\Pathy_BusinessAccessLayer.AssemblyInfoInputs.cache
+C:\Users\User\Desktop\DEMO_API\Pathy_BusinessAccessLayer\obj\Debug\net8.0\Pathy_BusinessAccessLayer.AssemblyInfo.cs
+C:\Users\User\Desktop\DEMO_API\Pathy_BusinessAccessLayer\obj\Debug\net8.0\Pathy_BusinessAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\DEMO_API\Pathy_BusinessAccessLayer\obj\Debug\net8.0\Pathy_Bu.3A9F6C04.Up2Date
+C:\Users\User\Desktop\DEMO_API\Pathy_BusinessAccessLayer\obj\Debug\net8.0\Pathy_BusinessAccessLayer.dll
+C:\Users\User\Desktop\DEMO_API\Pathy_BusinessAccessLayer\obj\Debug\net8.0\refint\Pathy_BusinessAccessLayer.dll
+C:\Users\User\Desktop\DEMO_API\Pathy_BusinessAccessLayer\obj\Debug\net8.0\Pathy_BusinessAccessLayer.pdb
+C:\Users\User\Desktop\DEMO_API\Pathy_BusinessAccessLayer\obj\Debug\net8.0\ref\Pathy_BusinessAccessLayer.dll

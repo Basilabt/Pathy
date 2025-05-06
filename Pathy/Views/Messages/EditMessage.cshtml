@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Edit post";
+}
+
+@model clsEditMessageViewModel;
+
+
+<head>
+
+    <link rel="stylesheet" href="~/css/EditUserPost.css" />
+
+</head>
+
+
+
+<body>
+
+    <form method="post" action="/Messages/EditMessage">
+
+        <input type="hidden" name="messageID" value="@Model.messageID" />
+        <input type="hidden" name="userToChatWithID" value="@Model.userToChatWithID" />
+     
+
+        <div class="post-container">
+
+            <textarea asp-for="message" class="text-box" placeholder="">@Model.message</textarea>
+           
+
+            <div class="action-buttons">
+                <button class="post-btn" type="submit">edit</button>
+            </div>
+
+        </div>
+
+    </form>
+
+</body>

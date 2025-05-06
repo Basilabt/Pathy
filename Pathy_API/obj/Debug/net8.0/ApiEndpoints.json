@@ -1,0 +1,1003 @@
+[
+  {
+    "ContainingType": "Pathy_API.Controllers.PathyAPIController",
+    "Method": "Login",
+    "RelativePath": "api/PathyAPI/Account/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDTO",
+        "Type": "Pathy_API.DTOs.LoginDTOs.clsLoginRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ],
+    "EndpointName": "Login"
+  },
+  {
+    "ContainingType": "Pathy_API.Controllers.PathyAPIController",
+    "Method": "Register",
+    "RelativePath": "api/PathyAPI/Account/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDTO",
+        "Type": "Pathy_API.DTOs.RegisterDTOs.clsRegisterRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 409
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ],
+    "EndpointName": "Register"
+  },
+  {
+    "ContainingType": "Pathy_API.Controllers.PathyAPIController",
+    "Method": "GetMessagesSentToUser",
+    "RelativePath": "api/PathyAPI/Chats/GetMessagesSentToUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDTO",
+        "Type": "Pathy_API.DTOs.ChatDTOs.clsGetSentMessagesToUserRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "GetMessagesSentToUser"
+  },
+  {
+    "ContainingType": "Pathy_API.Controllers.PathyAPIController",
+    "Method": "GetUsersToChatWith",
+    "RelativePath": "api/PathyAPI/Chats/GetUsersToChatWith",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDTO",
+        "Type": "Pathy_API.DTOs.ChatDTOs.clsGetUsersToChatWithRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "GetUsersToChatWith"
+  },
+  {
+    "ContainingType": "Pathy_API.Controllers.PathyAPIController",
+    "Method": "SendMessage",
+    "RelativePath": "api/PathyAPI/Chats/SendMessage",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDTO",
+        "Type": "Pathy_API.DTOs.ChatDTOs.clsSendMessageRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "SendMessage"
+  },
+  {
+    "ContainingType": "Pathy_API.Controllers.PathyAPIController",
+    "Method": "AddNewComment",
+    "RelativePath": "api/PathyAPI/Comments/AddNewComment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDTO",
+        "Type": "Pathy_API.DTOs.CommentsDTO.clsAddNewCommentRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "AddNewComment"
+  },
+  {
+    "ContainingType": "Pathy_API.Controllers.PathyAPIController",
+    "Method": "DeleteComment",
+    "RelativePath": "api/PathyAPI/Comments/DeleteComment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDTO",
+        "Type": "Pathy_API.DTOs.CommentsDTO.clsDeleteCommentRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "DeleteComment"
+  },
+  {
+    "ContainingType": "Pathy_API.Controllers.PathyAPIController",
+    "Method": "GetNumberOfPostComments",
+    "RelativePath": "api/PathyAPI/Comments/GetNumberOfPostComments",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDTO",
+        "Type": "Pathy_API.DTOs.CommentsDTO.clsGetNumberPostCommentsRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetNumberOfPostComments"
+  },
+  {
+    "ContainingType": "Pathy_API.Controllers.PathyAPIController",
+    "Method": "GetPostComments",
+    "RelativePath": "api/PathyAPI/Comments/GetPostComments",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDTO",
+        "Type": "Pathy_API.DTOs.CommentsDTO.clsGetPostCommentsRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetPostComments"
+  },
+  {
+    "ContainingType": "Pathy_API.Controllers.PathyAPIController",
+    "Method": "UpdateComment",
+    "RelativePath": "api/PathyAPI/Comments/UpdateComment",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDTO",
+        "Type": "Pathy_API.DTOs.CommentsDTO.clsUpdateCommentRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "UpdateComment"
+  },
+  {
+    "ContainingType": "Pathy_API.Controllers.PathyAPIController",
+    "Method": "GetNumberOfPostLikes",
+    "RelativePath": "api/PathyAPI/Likes/GetNumberOfPostLikes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDTO",
+        "Type": "Pathy_API.DTOs.LikesDTO.clsGetNumberOfPostLikesRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetNumberOfPostLikes"
+  },
+  {
+    "ContainingType": "Pathy_API.Controllers.PathyAPIController",
+    "Method": "GetUsersWhoLikePost",
+    "RelativePath": "api/PathyAPI/Likes/GetUsersWhoLikePost",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDTO",
+        "Type": "Pathy_API.DTOs.LikesDTO.clsGetUsersWhoLikePostRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetUsersWhoLikePost"
+  },
+  {
+    "ContainingType": "Pathy_API.Controllers.PathyAPIController",
+    "Method": "IsPostLikedByUser",
+    "RelativePath": "api/PathyAPI/Likes/IsPostLikedByUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDTO",
+        "Type": "Pathy_API.DTOs.LikesDTO.clsIsPostLikedByUserRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "IsPostLikedByUser"
+  },
+  {
+    "ContainingType": "Pathy_API.Controllers.PathyAPIController",
+    "Method": "LikePost",
+    "RelativePath": "api/PathyAPI/Likes/LikePost",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDTO",
+        "Type": "Pathy_API.DTOs.LikesDTO.clsLikePostRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "LikePost"
+  },
+  {
+    "ContainingType": "Pathy_API.Controllers.PathyAPIController",
+    "Method": "UnlikePost",
+    "RelativePath": "api/PathyAPI/Likes/UnlikePost",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDTO",
+        "Type": "Pathy_API.DTOs.LikesDTO.clsUnlikePostRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "UnlikePost"
+  },
+  {
+    "ContainingType": "Pathy_API.Controllers.PathyAPIController",
+    "Method": "AddPost",
+    "RelativePath": "api/PathyAPI/Post/Add",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDTO",
+        "Type": "Pathy_API.DTOs.PostsDTOs.NewPostDTOs.clsAddNewPostRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 409
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ],
+    "EndpointName": "AddPost"
+  },
+  {
+    "ContainingType": "Pathy_API.Controllers.PathyAPIController",
+    "Method": "DeletePost",
+    "RelativePath": "api/PathyAPI/Post/Delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDTO",
+        "Type": "Pathy_API.DTOs.PostsDTOs.DeleteDTOs.clsDeletePostRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 409
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ],
+    "EndpointName": "DeletePost"
+  },
+  {
+    "ContainingType": "Pathy_API.Controllers.PathyAPIController",
+    "Method": "GetTimelinePosts",
+    "RelativePath": "api/PathyAPI/Post/GetTimelinePosts",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDTO",
+        "Type": "Pathy_API.DTOs.PostsDTOs.TimelineDTOs.clsGetTimelinePostsRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ],
+    "EndpointName": "GetTimelinePosts"
+  },
+  {
+    "ContainingType": "Pathy_API.Controllers.PathyAPIController",
+    "Method": "UpdatePost",
+    "RelativePath": "api/PathyAPI/Post/Update",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDTO",
+        "Type": "Pathy_API.DTOs.PostsDTOs.UpdateDTOs.clsUpdatePostRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ],
+    "EndpointName": "UpdatePost"
+  },
+  {
+    "ContainingType": "Pathy_API.Controllers.PathyAPIController",
+    "Method": "FollowUser",
+    "RelativePath": "api/PathyAPI/User/Follow",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDTO",
+        "Type": "Pathy_API.DTOs.FollowDTO.clsFollowUserRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "FollowUser"
+  },
+  {
+    "ContainingType": "Pathy_API.Controllers.PathyAPIController",
+    "Method": "GetAllUserInformation",
+    "RelativePath": "api/PathyAPI/User/GetAllInformation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDTO",
+        "Type": "Pathy_API.DTOs.InformationDTOs.clsGetAllUserInformationRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 409
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ],
+    "EndpointName": "GetAllUserInformation"
+  },
+  {
+    "ContainingType": "Pathy_API.Controllers.PathyAPIController",
+    "Method": "GetUserProfileCardInformation",
+    "RelativePath": "api/PathyAPI/User/GetProfileCardInformation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDTO",
+        "Type": "Pathy_API.DTOs.InformationDTOs.clsCurrentUserInformationRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 409
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ],
+    "EndpointName": "GetUserProfileCardInformation"
+  },
+  {
+    "ContainingType": "Pathy_API.Controllers.PathyAPIController",
+    "Method": "GetUserFollowers",
+    "RelativePath": "api/PathyAPI/User/GetUserFollowers",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDTO",
+        "Type": "Pathy_API.DTOs.FollowersDTO.clsGetUserFollowersRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetUserFollowers"
+  },
+  {
+    "ContainingType": "Pathy_API.Controllers.PathyAPIController",
+    "Method": "GetUserFollowings",
+    "RelativePath": "api/PathyAPI/User/GetUserFollowings",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDTO",
+        "Type": "Pathy_API.DTOs.FollowingsDTO.clsGetUserFollowingsRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetUserFollowings"
+  },
+  {
+    "ContainingType": "Pathy_API.Controllers.PathyAPIController",
+    "Method": "GetUserPosts",
+    "RelativePath": "api/PathyAPI/User/GetUserPosts",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDTO",
+        "Type": "Pathy_API.DTOs.PostsDTOs.UserPostsDTOs.clsGetUserPostsRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 409
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ],
+    "EndpointName": "GetUserPosts"
+  },
+  {
+    "ContainingType": "Pathy_API.Controllers.PathyAPIController",
+    "Method": "GetSuggestedUsersToFollow",
+    "RelativePath": "api/PathyAPI/User/SuggestedUsersToFollow",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDTO",
+        "Type": "Pathy_API.DTOs.UsersDTO.clsSuggestedUsersToFollowRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ],
+    "EndpointName": "GetSuggestedUsersToFollow"
+  },
+  {
+    "ContainingType": "Pathy_API.Controllers.PathyAPIController",
+    "Method": "UnfollowUser",
+    "RelativePath": "api/PathyAPI/User/Unfollow",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDTO",
+        "Type": "Pathy_API.DTOs.UnfollowDTO.clsUnfollowUserRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "UnfollowUser"
+  },
+  {
+    "ContainingType": "Pathy_API.Controllers.PathyAPIController",
+    "Method": "UpdateInformation",
+    "RelativePath": "api/PathyAPI/User/Update/Information",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "requestDTO",
+        "Type": "Pathy_API.DTOs.UpdateDTOs.clsUpdateInformationRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 409
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ],
+    "EndpointName": "UpdateInformation"
+  }
+]
