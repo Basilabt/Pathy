@@ -51,7 +51,26 @@ This project includes:
 ## Mobile Application
 > **Note:** For access to the full iOS mobile application source code, please contact me at **[baabutaleb@gmai.com](mailto:baabutaleb@gmai.com)**.
 
-">
+### Login Screen
+  <img src="https://github.com/user-attachments/assets/3b8c45d8-d2cd-4182-8ec8-97bbb00e27c6" width="50%"/>
+
+### SignUp Screen 
+ <img src="https://github.com/user-attachments/assets/dfd4642e-15d0-494c-ab32-3b2df805e2f3" width="50%"/>
+
+ ### TimeLine Posts
+ <img src="https://github.com/user-attachments/assets/363a1f49-273e-47be-b91d-21cbb03d5841" width="50%"/>
+
+ ### Chat 
+ <img src="https://github.com/user-attachments/assets/8cd2a8f4-c459-445c-b00c-51716533b6bc" width="50%"/>
+
+
+ ### Explore
+ <img src="https://github.com/user-attachments/assets/7f6c8a34-cd44-4868-bb35-804d41291d7d" width="50%"/>
+
+ 
+ ### Profile 
+ <img src="https://github.com/user-attachments/assets/7abbedaf-6996-4ab9-ba7d-806c7cf22935" width="50%"/>
+
 
 
 
