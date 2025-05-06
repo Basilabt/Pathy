@@ -47,10 +47,10 @@ This project includes:
 ## 🗄️ Database Relational Schema
 ![Image](https://github.com/user-attachments/assets/e69b5800-8278-4e49-972d-ce30db018bfb)
 
-## Web Application
-
 
 ## Mobile Application
+> **Note:** For access to the full iOS mobile application source code, please contact me at **[baabutaleb@gmai.com](mailto:baabutaleb@gmai.com)**.
+
 
 <p align="center">
 
@@ -65,4 +65,7 @@ This project includes:
 
   <img src="https://private-user-images.githubusercontent.com/77483631/441005187-8cd2a8f4-c459-445c-b00c-51716533b6bc.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDY1NzQ3NDcsIm5iZiI6MTc0NjU3NDQ0NywicGF0aCI6Ii83NzQ4MzYzMS80NDEwMDUxODctOGNkMmE4ZjQtYzQ1OS00NDVjLWIwMGMtNTE3MTY1MzNiNmJjLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTA1MDYlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwNTA2VDIzMzQwN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTE3NTAwZjRhMGQwMjc4M2Y5OGEwYzc2N2ZhMTY0MmQ4NDIyZGYxMGI5OTM2NDdhOGE1ODUzNGNiODgwNTUxZmImWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.O3AAqiCpuzWfyHGOsFWZ0J05o7-42iPySrpzMhJEGe0" width="300" height = "600" />
 </p>
+
+
+## Web Application
 
