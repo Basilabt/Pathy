@@ -49,7 +49,7 @@ This project includes:
 
 
 ## 📱 Mobile Application
-> **Note:** For access to the full iOS mobile application source code, please contact me at **[baabutaleb@gmai.com](mailto:baabutaleb@gmai.com)**.
+> **Note:** For access to the full iOS mobile application source code, please contact me at **[baabutaleb@gmail.com](mailto:baabutaleb@gmail.com)**.
 
 ### Login Screen
 
@@ -82,7 +82,7 @@ This project includes:
 
 
 ## 🌍 Web Application
-> **Note:** For access to the full backend and database (for both web and mobile versions), please contact me at **[baabutaleb@gmai.com](mailto:baabutaleb@gmai.com)**.
+> **Note:** For access to the full backend and database (for both web and mobile versions), please contact me at **[baabutaleb@gmail.com](mailto:baabutaleb@gmail.com)**.
 
 ### Login Screen
   <img src="https://github.com/user-attachments/assets/62f09f17-3385-426f-ae6c-1cd07096e4a8" width="80%"/>
