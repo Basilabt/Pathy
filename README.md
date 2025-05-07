@@ -1,6 +1,6 @@
 # 🌐 Pathy - Social Media Platform
 
-![Image](https://github.com/user-attachments/assets/16404fc4-6908-4212-8e67-0e5c345498e9)
+![Image](https://github.com/user-attachments/assets/9cda5702-a93f-4839-932f-e8e56d532abf)
 
 [![👨‍💻 Developer](https://img.shields.io/badge/Developer-Basilabt-crimson)](https://github.com/Basilabt)
 ![🚀 C#](https://img.shields.io/badge/language-C%23-blue)
