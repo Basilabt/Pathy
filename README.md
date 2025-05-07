@@ -45,7 +45,7 @@ This project includes:
 ---
 
 ## 🗄️ Database Relational Schema
-![Image](https://github.com/user-attachments/assets/e69b5800-8278-4e49-972d-ce30db018bfb)
+![Image](https://github.com/user-attachments/assets/0c62a156-c1a6-4ffc-8d17-8b9b8b87ecae)
 
 
 ## 📱 Mobile Application
